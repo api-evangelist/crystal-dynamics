@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: probed
+source: live probes of /.well-known/* on apis.yml hosts
+notes: >-
+  All standard well-known paths return HTTP 403 (edge/CDN block, not a 200
+  document). No well-known artifacts were served. Absence is a valid result.
+probes:
+- path: /.well-known/security.txt
+  host: crystaldynamics.com
+  status: 403
+  file: null
+- path: /.well-known/openid-configuration
+  host: crystaldynamics.com
+  status: 403
+  file: null
+- path: /.well-known/oauth-authorization-server
+  host: crystaldynamics.com
+  status: 403
+  file: null
+- path: /.well-known/api-catalog
+  host: crystaldynamics.com
+  status: 403
+  file: null
+- path: /.well-known/ai-plugin.json
+  host: crystaldynamics.com
+  status: 403
+  file: null

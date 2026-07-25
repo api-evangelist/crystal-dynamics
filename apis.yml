@@ -1,8 +1,24 @@
 aid: crystal-dynamics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/crystal-dynamics.png
 name: Crystal Dynamics
-description: 'Crystal Dynamics is a company surfaced as a portfolio company of kleiner-perkins and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Crystal Dynamics is a AAA video game development studio, best known
+  as the home of the Tomb Raider franchise and its Lara Croft character, and part
+  of the Embracer Group. The studio publishes a consumer-facing marketing website,
+  careers portal, player support center, and news/community hub, but exposes no public
+  developer API program, API documentation, developer portal, or SDKs. This profile
+  entered the API Evangelist network as a VC-portfolio stub lead; enrichment confirms
+  there is no public API surface to catalog at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/crystal-dynamics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +26,18 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: 'No public API/developer program found (game studio, Embracer Group).
+  Domain-security and well-known probes run; identity/link properties filled from live site.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Video Games
+- Game Studio
+- Entertainment
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/crystal-dynamics-domain-security.yml
+- type: WellKnown
+  url: well-known/crystal-dynamics-well-known.yml
 - type: Website
   url: https://crystaldynamics.com
+- type: Support
+  url: http://support.crystald.com
+- type: Careers
+  url: https://www.crystaldynamics.com/careers/
+- type: Blog
+  url: https://www.crystaldynamics.com/news-community/
+- type: TermsOfService
+  url: https://www.crystaldynamics.com/legal/terms
+- type: PrivacyPolicy
+  url: https://www.crystaldynamics.com/legal/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
