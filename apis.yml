@@ -31,6 +31,9 @@ description: 'Crystal Dynamics is a AAA video game development studio, best know
   entered the API Evangelist network as a VC-portfolio stub lead; enrichment confirms
   there is no public API surface to catalog at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/crystal-dynamics/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "This profile entered the API Evangelist network as a VC-portfolio stub lead; enrichment confirms there is no public API surface to catalog at this time."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
